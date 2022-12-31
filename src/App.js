@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import NavMenu from "./modules/core/components/molecules/NavMenu/NavMenu";
+
+//import routes and route
+
+import { Routes, Route } from "react-router-dom";
+
+// import components
+import MainFooter from "./modules/core/components/molecules/MainFooter/MainFotter";
+
+//import pages
+import HomePage from "./modules/core/pages/HomePage";
+import ServicioDetails from "./modules/core/pages/ServicioDetails";
+import NotFoundPage404 from "./modules/core/pages/NotFoundPage404";
+import ServicioList from "./modules/core/components/molecules/ServicioList/ServicioList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="max-w-[1440px] mx-auto bg-white overflow-hidden">
+      <NavMenu />
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route path="/detalle_servicio/:id" element={<ServicioDetails />} />
+        <Route path="/resultado_busqueda/" element={<ServicioList />} />
+        <Route exact path="*" element={<NotFoundPage404 />} />
+      </Routes>
+      <MainFooter />
     </div>
   );
 }

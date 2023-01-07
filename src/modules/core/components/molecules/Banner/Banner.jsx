@@ -18,7 +18,7 @@ function Banner() {
             <img className=" rounded-tl-[350px]" src={Pareja} alt="" />
         </div>
       </div>
-      <SearchBar/>
+      {/* <SearchBar/> */}
     </section>
   );
 }

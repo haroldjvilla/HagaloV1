@@ -26,7 +26,7 @@ function NavMenu() {
             </a>
           </div>
           {/* primary nav */}
-          <div className="hidden md:flex items-center space-x-3  ">
+          {/* <div className="hidden md:flex items-center space-x-3  ">
             <a href="/" className="py-5 px-3 text-gray-700 hover:text-gray-900">
               Directorio de Profesionales
             </a>
@@ -35,7 +35,7 @@ function NavMenu() {
             </a>
           </div>
           {/* secundary nav */}
-          <div className="hidden md:flex items-center space-x-1 text-gray-700">
+          {/* <div className="hidden md:flex items-center space-x-1 text-gray-700">
             <a href="/" className="py-5 px-3">
               Acceder
             </a>
@@ -45,7 +45,7 @@ function NavMenu() {
             >
               Registrarce
             </a>
-          </div>
+          </div> */}
 
           {/* mobile button goes here*/}
           <div
@@ -60,7 +60,7 @@ function NavMenu() {
       </div>
       {/* mobile menu */}
 
-      {nav && (
+      {/* {nav && (
         <div class="md:hidden flex flex-col justify-center items-center w-full absolute bg-white top-24 left-0 shadow-md space-y-6 overflow-hidden transition-all">
           <div className="pb-6">
             <a href="/" className="block py-2 px-8 text-sm">
@@ -106,7 +106,7 @@ function NavMenu() {
             </button>
           </div>
         </div>
-      )}
+      )} */}
     </nav>
   );
 }

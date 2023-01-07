@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 //import data
 import { servicesData } from "../../../data";
@@ -7,11 +7,13 @@ import { servicesData } from "../../../data";
 import { useParams } from "react-router-dom";
 
 //import icons
-import { BiBed, BiBath } from "react-icons/bi";
+import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import { RxDotFilled } from "react-icons/rx";
 
 //import link
 import { Link } from "react-router-dom";
 import { FcLikePlaceholder } from "react-icons/fc";
+import ImagaSlider from "../components/molecules/ImagaSlider/ImagaSlider";
 
 function ServicioDetails() {
   //get the services id
@@ -21,6 +23,26 @@ function ServicioDetails() {
   const services = servicesData.find((services) => {
     return services.id === parseInt(id);
   });
+
+  const [currentIndex, setCurrentIndex] = useState(4);
+
+  const prevSlide = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide
+      ? services.imageSlider.length - 1
+      : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const nextSlide = () => {
+    const isLastslide = currentIndex === services.imageSlider.length - 1;
+    const newIndex = isLastslide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  };
 
   return (
     <section>
@@ -50,7 +72,43 @@ function ServicioDetails() {
         <div className="flex flex-col items-start gap-8 lg:flex-row">
           <div className="max-w-[768px]">
             <div className="mb-2">
-              <img src={services.imageLg} alt="" />
+              {/* imageslider */}
+              <div className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group">
+                <div className="w-full h-full rounded-2xl bg-center bg-cover transition duration-500">
+                  <img
+                    src={services.imageSlider[currentIndex].url}
+                    className="w-full h-full rounded-2xl bg-center bg-contain transition duration-500"
+                    alt=""
+                  />
+                </div>
+                {/* Left Arrow */}
+                <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+                  <BsChevronCompactLeft onClick={prevSlide} size={30} />
+                </div>
+                {/* Right Arrow */}
+                <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+                  <BsChevronCompactRight onClick={nextSlide} size={30} />
+                </div>
+
+                <div className="flex top-4 justify-center py-2">
+                  {services.imageSlider.map((slide, slideIndex) => (
+                    <div
+                      key={slideIndex}
+                      onClick={() => goToSlide(slideIndex)}
+                      className="text-2xl cursor-pointer"
+                    >
+                      <RxDotFilled />
+                    </div>
+                  ))}
+                </div>
+
+                {/* <div
+                  style={{
+                    backgroundImage: `url{services.imageSlider[4].url}`,
+                  }}
+                  className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
+                ></div> */}
+              </div>
             </div>
             <div className="flex gap-x-6 mb-6">
               <div className="flex gap-x-2 items-center">
@@ -89,10 +147,18 @@ function ServicioDetails() {
                 type="text"
                 placeholder="Telefono*"
               />
-              <textarea className="border border-gray-300 focus:border-violet-700 outline-none resize-none rounded w-full p-4 h-36 text-sm text-gray-400" placeholder="Mensaje" defaultValue='Hola Estoy interesado en realizar con ustedes un proyecto'></textarea>
+              <textarea
+                className="border border-gray-300 focus:border-violet-700 outline-none resize-none rounded w-full p-4 h-36 text-sm text-gray-400"
+                placeholder="Mensaje"
+                defaultValue="Hola Estoy interesado en realizar con ustedes un proyecto"
+              ></textarea>
               <div className="flex gap-x-2">
-                <button className="bg-violet-700 hover:bg-violet-800 text-white rounded p-4 text-sm w-full transition">Enviar mensaje</button>
-                <button className="border border-violet-700 text-violet-700 hover:border-violet-500 hover:text-violet-500 rounded p-4 text-sm w-full transition">Llamada</button>
+                <button className="bg-violet-700 hover:bg-violet-800 text-white rounded p-4 text-sm w-full transition">
+                  Enviar mensaje
+                </button>
+                <button className="border border-violet-700 text-violet-700 hover:border-violet-500 hover:text-violet-500 rounded p-4 text-sm w-full transition">
+                  Llamada
+                </button>
               </div>
             </form>
           </div>

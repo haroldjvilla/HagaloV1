@@ -13,7 +13,6 @@ import { RxDotFilled } from "react-icons/rx";
 //import link
 import { Link } from "react-router-dom";
 import { FcLikePlaceholder } from "react-icons/fc";
-import ImagaSlider from "../components/molecules/ImagaSlider/ImagaSlider";
 
 function ServicioDetails() {
   //get the services id
@@ -44,6 +43,9 @@ function ServicioDetails() {
     setCurrentIndex(slideIndex);
   };
 
+  console.log(currentIndex);
+  console.log();
+
   return (
     <section>
       <div className="container mx-auto min-h-[800px] mb-14 mt-4">
@@ -73,7 +75,7 @@ function ServicioDetails() {
           <div className="max-w-[768px]">
             <div className="mb-2">
               {/* imageslider */}
-              <div className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group">
+              <div className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group sm:h-auto">
                 <div className="w-full h-full rounded-2xl bg-center bg-cover transition duration-500">
                   <img
                     src={services.imageSlider[currentIndex].url}
@@ -101,13 +103,6 @@ function ServicioDetails() {
                     </div>
                   ))}
                 </div>
-
-                {/* <div
-                  style={{
-                    backgroundImage: `url{services.imageSlider[4].url}`,
-                  }}
-                  className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
-                ></div> */}
               </div>
             </div>
             <div className="flex gap-x-6 mb-6">

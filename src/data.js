@@ -8,17 +8,23 @@ import DecorinoxLogoP from "./assets/img/houses/decorinoxlogo.jpg";
 import BroncesyLaminasLogo from "./assets/img/agents/bronces-y-laminasLogo.png";
 import AluminezLogo from "./assets/img/houses/aluminezLogo.jpg";
 import AluminezLogo1 from "./assets/img/houses/aluminez.png";
-import AluminezLg from "./assets/img/houses/20190321_111745-1.jpg";
 import JaufLogo from "./assets/img/houses/jaufLogo.jpg";
 import JaufLogo1 from "./assets/img/houses/Jauf LOGO.png";
 
 // import images slider
 
-import slider1 from "./assets/img/houses/imageSlider/WhatsApp Image 2023-01-06 at 6.17.36 PM.jpeg";
+//decorinox
+import slider1 from "./assets/img/houses/imageSlider/arreglado.jpg";
 import slider2 from "./assets/img/houses/imageSlider/WhatsApp Image 2023-01-06 at 6.17.59 PM.jpeg";
 import slider3 from "./assets/img/houses/imageSlider/WhatsApp Image 2023-01-06 at 6.18.20 PM.jpeg";
-import slider4 from "./assets/img/houses/imageSlider/WhatsApp Image 2023-01-06 at 6.19.19 PM.jpeg";
+import slider4 from "./assets/img/houses/imageSlider/WhatsApp Image 2023-01-06 at 6.19.19 PM1.jpeg";
 import slider5 from "./assets/img/houses/imageSlider/WhatsApp Image 2023-01-06 at 6.19.54 PM.jpeg";
+
+//aluminez
+import slider6 from "./assets/img/houses/imageSlider/aluminez/2.jpg";
+import slider7 from "./assets/img/houses/imageSlider/aluminez/20170914_154811-1.jpg";
+import slider8 from "./assets/img/houses/imageSlider/aluminez/20180517_072524.jpg";
+import slider9 from "./assets/img/houses/imageSlider/aluminez/20190321_111745-1.jpg";
 
 // import apartments images
 
@@ -34,7 +40,7 @@ export const servicesData = [
     description:
       "Donde fabricamos tus visiones Nuestro objetivo, cumplir y superar las instrucciones de diseño individuales de cada comprador. Nuestra meta, operar un negocio exitoso con un crecimiento constante, dedicado a mejorar el estándar de nuestros diseños en pasamanos y sistemas livianos disponibles, mientras brindamos un entorno de apoyo a todos nuestros colaboradores.",
     image: DecorinoxLogoP,
-    imageLg: DecorinoxVentanas,
+    imageLg: "",
     imageSlider: [
       {
         url: slider1,
@@ -90,7 +96,22 @@ export const servicesData = [
     description:
       "Suministro e Instalación de todo lo relacionado con el Aluminio, Acero y Vidrio. ALUMINEZ S.A.S, fundada el 21 de Septiembre de 2016, cuenta con un gerente y un comercial con más de 21 años en el campo del aluminio, se creó con el objetivo de ofrecer soluciones de diseños innovadores en el suministro e instalación de Aluminio arquitectónico, dirigido a empresas de la construcción y público en general. Su estructura organizacional está conformada por 21 personas, las cuales 3 son administrativos, un auxiliar de SST y los otros 17 son operativos",
     image: AluminezLogo,
-    imageLg: AluminezLg,
+    imageLg: "",
+    imageSlider: [
+      {
+        url: slider6,
+      },
+      {
+        url: slider7,
+      },
+      {
+        url: slider8,
+      },
+      {
+        url: slider9,
+      },
+    
+    ],
     ciudad: "Manizales",
     telefono: "8804044",
     address: "Carrera 18 #18-22",

@@ -77,6 +77,11 @@ export const servicesData = [
       "En JAUF Construcciones S.A.S nos dedicamos a la realización de ventanas y cerramientos de alta calidad en el eje cafetero.",
     image: JaufLogo,
     imageLg: "",
+    imageSlider: [
+      {
+        url: "",
+      },
+    ],
     ciudad: "Manizales",
     telefono: "300 4618782",
     address: "CR 29 A 20 40",

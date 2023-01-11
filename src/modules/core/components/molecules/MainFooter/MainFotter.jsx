@@ -5,10 +5,10 @@ import {AiOutlineInstagram} from "react-icons/ai"
 function MainFotter() {
   return (
     <footer className="bg-gray-100 py-8 text-center text-white">
-      <div class="w-full min-h-screen flex items-center justify-center bg-gray-700">
+      <div class="w-full min-h-screen flex items-center justify-center bg-gray-300">
         <div class="md:w-2/3 w-full px-4 text-white flex flex-col">
-          <div class="w-full text-7xl font-bold">
-            <h1 class="w-full md:w-2/3">Cuéntanos qué necesitas</h1>
+          <div class="w-full text-5xl font-bold ">
+            <h1 class="w-full md:w-2/3 ">Cuéntanos qué necesitas</h1>
           </div>
           <div class="flex mt-8 flex-col md:flex-row md:justify-between">
             <p class="w-full md:w-2/3 text-gray-400">
@@ -43,7 +43,7 @@ function MainFotter() {
                 Contact
               </a>
               <div class="flex flex-row space-x-8 items-center justify-between">
-                <a href="https://www.instagram.com/harold.jvilla_/">
+                <a href="https://www.instagram.com/harold.jvilla_/" className="text-gray-800">
                   <AiOutlineInstagram/>
                 </a>
               </div>

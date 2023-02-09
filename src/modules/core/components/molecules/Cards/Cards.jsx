@@ -10,7 +10,7 @@ function Cards() {
     <section className="bg-gray-100 min-h-[260px] pb-[55px] lg:-mt-24 pt-40">
       <div className="container mx-auto flex flex-col lg:flex-row gap-x-[32px]">
         {/* card group */}
-        <div className="flex-1 flex gap-x-[15px] lg:gap-x-[32px] -mt-[38px] z-10 lg:-mt-[77px] mx-auto">
+        <div className="flex-1 flex gap-x-[15px] lg:gap-x-[32px] -mt-[38px]  lg:-mt-[77px] mx-auto">
           {/* card 1 */}
           <div className="bg-white w-full max-w-[282px] p-[14px] lg:p-[26px] shadow-2xl rounded-md max-h-[282px]">
             {/* card text */}
@@ -45,7 +45,7 @@ function Cards() {
           </div>
         </div>
         {/* card 3 */}
-        <div className="bg-white w-full flex-1 max-w-[578px] mx-auto p-[14px] lg:p-[26px] mt-2 lg:-mt-[77px] z-10 shadow-2xl rounded-md flex justify-between items-start">
+        <div className="bg-white w-full flex-1 max-w-[578px] mx-auto p-[14px] lg:p-[26px] mt-2 lg:-mt-[77px]  shadow-2xl rounded-md flex justify-between items-start">
           {/* card text */}
           <div className="max-w-[300px] ">
             <div className="flex items-center mb-4 lg:mb-8">

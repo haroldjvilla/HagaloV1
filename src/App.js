@@ -21,7 +21,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route path="/detalle_servicio/:id" element={<ServicioDetails />} />
-        
+        <Route path="/resultado_busqueda/" element={<ServicioList />} />
         <Route exact path="*" element={<NotFoundPage404 />} />
       </Routes>
       <MainFooter />

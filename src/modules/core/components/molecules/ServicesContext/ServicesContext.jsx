@@ -9,11 +9,11 @@ export const ServicesContext = createContext();
 function ServicesContextProvider({ children }) {
   const [services, setServices] = useState(servicesData);
   const [houses, setHouses] = useState(servicesData);
-  const [ciudad, setCiudad] = useState("Ciuadad (any)");
+  const [ciudad, setCiudad] = useState("Ciuadad");
   const [ciudades, setCiudades] = useState([]);
-  const [servicio, setServicio] = useState("Servicio (any)");
+  const [servicio, setServicio] = useState("Servicio");
   const [servicios, setServicios] = useState([]);
-  const [especialidad, setEspecialidad] = useState("Especialidad (any)");
+  const [especialidad, setEspecialidad] = useState("Especialidad");
   const [especialidades, setEspecialidades] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -24,7 +24,7 @@ function ServicesContextProvider({ children }) {
     });
 
     // remove duplicates
-    const uniqueCiudades = ["Ciudad (any)", ...new Set(allCiudades)];
+    const uniqueCiudades = [...new Set(allCiudades)];
     // set ciudades state
     setCiudades(uniqueCiudades);
   }, []);
@@ -36,7 +36,7 @@ function ServicesContextProvider({ children }) {
     });
 
     // remove duplicates
-    const uniqueServicios = ["Servicio (any)", ...new Set(allServicios)];
+    const uniqueServicios = [...new Set(allServicios)];
     // set servicios state
     setServicios(uniqueServicios);
   }, []);
@@ -48,10 +48,7 @@ function ServicesContextProvider({ children }) {
     });
 
     // remove duplicates
-    const uniqueEspecialidades = [
-      "Especialidad (any)",
-      ...new Set(allEspecialidades),
-    ];
+    const uniqueEspecialidades = [...new Set(allEspecialidades)];
     // set servicios state
     setEspecialidades(uniqueEspecialidades);
   }, []);
@@ -61,7 +58,7 @@ function ServicesContextProvider({ children }) {
     setLoading(true);
     //create a function that checks if the string inclides '(any)'
     const isDefault = (str) => {
-      return str.split(" ").includes("(any)");
+      return str.split(" ").includes("(Ninguna)");
     };
 
     const newServicio = servicesData.filter((service) => {

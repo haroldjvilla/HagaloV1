@@ -16,12 +16,12 @@ function NavMenu() {
   };
 
   return (
-    <nav className="bg-gray-100">
+    <nav className="bg-gray-200">
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between">
           {/* logo */}
           <div>
-            <a className="flex items-center py-5 px-2 text-gray-700 " href="/">
+            <a className="flex items-center py-5 px-2 text-gray-700  " href="/">
               <img className="h-9  " src={LogoHagalo} alt="" />
             </a>
           </div>

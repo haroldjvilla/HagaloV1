@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../components/molecules/Banner/Banner";
 import Cards from "../components/molecules/Cards/Cards";
+import HagaloSection from "../components/molecules/Indicacion/Indicacion";
 import Modal from "../components/molecules/Modal/Modal";
 import ServicioList from "../components/molecules/ServicioList/ServicioList";
 import Testimonios from "../components/molecules/Testimonios/Testimonios";
@@ -14,8 +15,9 @@ function HomePage() {
       <Modal/>
       
       {/* <ServicioList /> */}
-      <Cards/>
-      <Testimonios/>
+      {/* <Cards/>
+      <Testimonios/> */}
+      <HagaloSection/>
 
       
 

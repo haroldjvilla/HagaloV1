@@ -16,7 +16,7 @@ import ServicioList from "./modules/core/components/molecules/ServicioList/Servi
 
 function App() {
   return (
-    <div className="max-w-[1440px] mx-auto bg-white overflow-hidden">
+    <div className="max-w-[1440px] mx-auto bg-[#f6f9fc] overflow-hidden">
       <NavMenu />
       <Routes>
         <Route exact path="/" element={<HomePage />} />
@@ -30,3 +30,4 @@ function App() {
 }
 
 export default App;
+

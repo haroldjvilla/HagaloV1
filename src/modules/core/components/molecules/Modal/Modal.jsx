@@ -5,8 +5,8 @@ const Modal = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div className="px-[30px] py-6 max-w-[1170px] mx-auto flex flex-col justify-center items-center h-72 m-24">
-      <div>
+    <div className=" px-[30px] w-full py-6  mx-auto flex flex-col justify-center items-center h-72 m-24 bg-gray-300 ">
+      <div className="">
         <h1 className=" text-lg text-gray-800 lg:text-[40px] leading-none mb-6 justify-center text-center">
           ¡Haz realidad tus proyectos de construcción o remodelación con{" "}
           <span className="text-violet-700"> Hagalo </span>! Descubre cómo

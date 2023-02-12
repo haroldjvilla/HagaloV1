@@ -1,6 +1,6 @@
 import React from "react";
 import LogoHagalo from "../../../../../assets/img/logo.png";
-import {AiOutlineInstagram} from "react-icons/ai"
+import { AiOutlineInstagram } from "react-icons/ai";
 
 function MainFotter() {
   return (
@@ -31,25 +31,31 @@ function MainFotter() {
                 </a>
               </div>
               <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
-                About
+                Nosotros
               </a>
               <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
-                Services
+                Servicios
               </a>
               <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
-                Why us
+                Porque nosotros
               </a>
               <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
-                Contact
+                Contacto
               </a>
               <div class="flex flex-row space-x-8 items-center justify-between">
-                <a href="https://www.instagram.com/harold.jvilla_/" className="text-gray-800">
-                  <AiOutlineInstagram/>
+                <a
+                  href="https://www.instagram.com/harold.jvilla_/"
+                  className="text-gray-800"
+                >
+                  <AiOutlineInstagram />
                 </a>
               </div>
             </div>
             <hr class="border-gray-600" />
             <p class="w-full text-center my-12 text-gray-600">
+              Hecho con ❤ por Harold
+            </p>
+            <p class="w-full text-center my-3 text-gray-400 text-sm">
               Copyright © 2022 Hagalo
             </p>
           </div>

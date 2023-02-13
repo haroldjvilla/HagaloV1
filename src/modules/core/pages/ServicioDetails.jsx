@@ -13,6 +13,7 @@ import { RxDotFilled } from "react-icons/rx";
 //import link
 import { Link } from "react-router-dom";
 import { FcLikePlaceholder } from "react-icons/fc";
+import ModalClientDetail from "../components/molecules/ModalClientDetail/ModalClientDetail";
 
 function ServicioDetails() {
   //get the services id
@@ -120,9 +121,7 @@ function ServicioDetails() {
               </div>
               <div>
                 <div className="font-bold text-lg">{services.agent.name}</div>
-                <Link to="" className="text-violet-700 text-sm">
-                  Telefono
-                </Link>
+                <ModalClientDetail/>
               </div>
             </div>
             {/* form */}
@@ -151,9 +150,7 @@ function ServicioDetails() {
                 <button className="bg-violet-700 hover:bg-violet-800 text-white rounded p-4 text-sm w-full transition">
                   Enviar mensaje
                 </button>
-                <button className="border border-violet-700 text-violet-700 hover:border-violet-500 hover:text-violet-500 rounded p-4 text-sm w-full transition">
-                  Llamada
-                </button>
+                
               </div>
             </form>
           </div>

@@ -1,8 +1,8 @@
 import React from "react";
 // import images
-import Cel from "../../../../../assets/img/mobile.png"
-import Call from "../../../../../assets/img/call_center.png"
-import Deal from "../../../../../assets/img/greetings.png"
+import Cel from "../../../../../assets/img/mobile1.png"
+import Call from "../../../../../assets/img/call_center1.png"
+import Deal from "../../../../../assets/img/greetings2.png"
 
 const HagaloSection = () => {
   return (

@@ -1,6 +1,7 @@
 import React from "react";
 import LogoHagalo from "../../../../../assets/img/logo.png";
 import { AiOutlineInstagram } from "react-icons/ai";
+import CustomModal from "../coustomModal/CustomModal";
 
 function MainFotter() {
   return (
@@ -15,9 +16,7 @@ function MainFotter() {
               Te recomendaremos a los mejores profesionales de confianza
             </p>
             <div class="w-44 pt-6 md:pt-0">
-              <a class="bg-red-500 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">
-                Contactanos
-              </a>
+              <CustomModal/>
             </div>
           </div>
           <div class="flex flex-col">

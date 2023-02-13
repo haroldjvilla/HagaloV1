@@ -30,9 +30,9 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-xl">
-      <div className="mb-4">
-        <label className="block text-gray-700 font-medium mb-2" htmlFor="name">
+    <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-xl overflow-y-auto">
+      <div className="mb-4 overflow-y-auto">
+        <label placeholder="Pepito perez" className="block text-gray-700 font-medium mb-2" htmlFor="name">
           Nombre
         </label>
         <input
@@ -41,6 +41,7 @@ const Form = () => {
           value={formData.name}
           onChange={handleInputChange}
           className="border border-gray-400 p-2 w-full"
+          placeholder="Pepito Perez"
         />
       </div>
 

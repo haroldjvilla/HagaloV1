@@ -3,7 +3,7 @@ import image1 from "../../../../assets/img/Publicidad/divisiones.jpg";
 import image2 from "../../../../assets/img/apartments/a5lg.png";
 import image3 from "../../../../assets/img/apartments/a1.png";
 import LogoDivisiones from "../../../../assets/img/Publicidad/divisiones.png";
-import LogoDivisionesPeque from "../../../../assets/img/Publicidad/divisionesPeque2.jpg";
+import LogoDivisionesPeque from "../../../../assets/img/Publicidad/divisionesPeque3.jpg";
 import { useMediaQuery } from "@react-hook/media-query";
 
 import { BiPhoneCall } from "react-icons/bi";

@@ -19,7 +19,7 @@ const HagaloSection = () => {
               className="h-48 object-cover text-center items-center justify-center inline"
             />
             <div className="p-5">
-              <h3 className="text-lg font-medium text-gray-900">1.</h3>
+              <h3 className="text-lg font-medium text-gray-900">1</h3>
               <p className="mt-2 text-md text-gray-700">
                 Encuentra a alguien o sube tu proyecto para obtener una
                 cotización

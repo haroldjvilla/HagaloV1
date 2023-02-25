@@ -1,4 +1,5 @@
 import React from "react";
+import CarouselSlider from "../components/Ad/Ad";
 import Banner from "../components/molecules/Banner/Banner";
 import Cards from "../components/molecules/Cards/Cards";
 import HagaloSection from "../components/molecules/Indicacion/Indicacion";
@@ -18,6 +19,7 @@ function HomePage() {
       {/* <Cards/>
       <Testimonios/> */}
       <HagaloSection/>
+      <CarouselSlider/>
 
       
 

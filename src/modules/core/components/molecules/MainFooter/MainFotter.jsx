@@ -5,7 +5,7 @@ import CustomModal from "../coustomModal/CustomModal";
 
 function MainFotter() {
   return (
-    <footer className="bg-gray-100 py-8 text-center text-white">
+    <footer className="bg-gray-100  text-center text-white">
       <div class="w-full min-h-screen flex items-center justify-center bg-gray-300">
         <div class="md:w-2/3 w-full px-4 text-white flex flex-col">
           <div class="w-full text-5xl font-bold ">

@@ -21,7 +21,7 @@ function ModalClientDetailInsade() {
       <div className="flex flex-col justify-center items-center px-4 pb-4 gap-7">
         <h1 className="p-4">Contacta con {services.name}</h1>
         <p className="text-center ">Si decides llamar ¡recuerda decir que vienes de Hagalo!</p>
-        <h1 className="flex gap-3">
+        <h1 className="flex gap-3 cursor-pointer">
           <BiPhoneCall size={30} /> {services.telefono}
         </h1>
       </div>
